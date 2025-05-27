@@ -7,4 +7,4 @@
 - 吃到食物得分，碰到墙或自己就游戏结束
 
 🔗 部署地址：
-https://username.github.io/Greedy-snake/
+https://dawn-168.github.io/Greedy-snake/
