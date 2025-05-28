@@ -1,32 +1,82 @@
 body {
   margin: 0;
-  background-color: #111;
+  background-color: #1e1e1e;
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.container {
+.game-container {
   text-align: center;
 }
 
-canvas {
-  border: 2px solid #fff;
-  background-color: #000;
-  margin-top: 20px;
+h1 {
+  margin-bottom: 10px;
 }
 
-.score {
-  margin-top: 15px;
+.score-display {
   font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
-button {
-  margin-top: 15px;
-  padding: 10px 20px;
+canvas {
+  border: 2px solid #ffffffcc;
+  background-color: #000;
+  margin-bottom: 10px;
+}
+
+#gameStatus {
+  color: red;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.controls {
+  margin-bottom: 15px;
+}
+
+.controls button {
+  margin: 0 5px;
+  padding: 8px 16px;
   font-size: 1rem;
   cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: white;
+  transition: 0.2s;
+}
+
+.controls button:hover {
+  background-color: #555;
+}
+
+.d-pad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 自动伸缩 */
+  gap: 5px;
+  margin-top: 15px;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dpad {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 20px;
+  line-height: 1;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dpad:hover {
+  background-color: #444;
 }
